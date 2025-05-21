@@ -1,4 +1,4 @@
-# LeetCode link:
+# LeetCode link: https://leetcode.com/problems/remove-element/description/
 # Difficulty:
 # Notes: 
 
