@@ -1,6 +1,6 @@
-# LeetCode link:
-# Difficulty:
-# Notes: 
+# LeetCode link: https://leetcode.com/problems/valid-parentheses/
+# Difficulty: Easy
+# Notes: Good introduction to HashMaps and 'Pythonic code'
 
 # ---------------------------- #
 
@@ -36,6 +36,7 @@ class Solution:
 # Time Complexity: O(n)
 # Space Complexity: O(n)
 # Notes:
+# This solution is a lot more 'Pythonic'!
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
