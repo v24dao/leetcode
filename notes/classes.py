@@ -1,18 +1,23 @@
 ## Class Methods: 
 ## 1. Allows operations related to the class itself
-## 2. Takes cls or self as the first parameter
+## 2. Takes cls as the first parameter, which represents the class itself.
 
-## Instance Methods = Best for operations on instances of the class (objects) -> use self
-## Static Methods = Best for utility functions that do not need access to class data
+## Instance Methods = Best for operat ions on instances of the class (objects) -> use self
+## Static Methods = Best for general utility functions that do not need access to class data
 ## Class Methods = Best for class-level data or we require access to the class itself -> use cls
 
+## Class of Student
 class Student:
+
+    ## Class Variables
     count = 0
     total_gpa = 0
 
+    ## Constructor 
     def __init__(self, name, gpa):
         self.name = name
         self.gpa = gpa
+        ## Whenever we create a student object, increase count by one!
         Student.count += 1
         Student.total_gpa += self.gpa
 
@@ -20,7 +25,7 @@ class Student:
     def get_info(self):
         return f"{self.name} {self.gpa}"
     
-    ## Class Method
+    ## Class Methods
     @classmethod
     def get_count(cls):
         return f"Total # of students: {cls.count}"
@@ -41,7 +46,7 @@ student1 = Student("Spongebob", 3.2)
 student2 = Student("Patrick", 2.0)
 student3 = Student("Sandy", 4.0)
 
-# print(Student.get_count() )
-# print(Student.get_total_gpa() )
-
+print(Student.get_count() )
+print(Student.get_total_gpa() )
 print(Student.get_average_gpa())
+
