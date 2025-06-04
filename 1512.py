@@ -28,7 +28,7 @@ class Solution(object):
 # >>> Hashmap Solution <<<
 # Time Complexity: O(n)
 # Space Complexity: O(n)
-# Notes:
+# Notes: Solution relies on knowing n * n-1 // 2 -> n choose 2!!! -> binomial coefficient
 # T/C explanation:
 # two loops O(n) where n == number of variables in nums, and O(k) where k == number of unique variables in count. => O(n + k) => O(n) in this case
 # S/C explanation:
