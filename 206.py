@@ -29,10 +29,10 @@ class Solution(object):
             current = temp_next # Also move current pointer to the right
         
         # Once we reach the end of the linked list:
-        # prev will point to the last Node
+        # prev will point to the last Node in the original LL.
         # Current will point to None
     
-        return prev # This returns the tail Node of the old LL (which is the head of new LL)
+        return prev # This returns the tail Node of the original LL (which is the head of new LL)
 
 
         
@@ -43,6 +43,27 @@ class Solution(object):
 # Time Complexity: O(n)
 # Space Complexity: O(1)
 # Notes: Worse than the 2 Pointer solution but still worth knowing
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        # Edge Case:
+        if not head:
+            return None
+        # Base Case:
+        # This is what gets returned if we ARE at the end of the original linked list.
+        # new_head variable gets overwritten if we are NOT at the end of the original linked list.
+        new_head = head 
+
+        # Recursive case:
+        if head.next:
+            #This is what gets returned if we are NOT at the end of the original linked list.
+            new_head = self.reverseList(head.next) 
+            head.next.next = head # point the next node back to current node
+        head.next = None # Point current head to None
+        return new_head
 
 # ---------------------------- #
 
