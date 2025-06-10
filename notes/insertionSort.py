@@ -5,9 +5,13 @@
 # ---------------------------- #
 
 # >>> My Solution <<<
-# Time Complexity: 
-# Space Complexity:
-# Notes:
+# Time Complexity: O(n^2) 
+#   Outer loop runs n times. 
+#   Inner while loop can run up to i times for each i. 0 + 1 + 2 + ... + (n-1) -> (n-1)/2
+#   -> n*(n-1)/2 = O(n^2)
+# Space Complexity: O(n^2)
+#   ans stores n different states. Each state is n length. => O(n^2)
+# Notes: 
 
 # Definition for a pair.
 # class Pair:
