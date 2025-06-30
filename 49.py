@@ -1,12 +1,14 @@
-# LeetCode link:
+# LeetCode link: https://leetcode.com/problems/group-anagrams/description/
 # Difficulty: Medium
 # Notes: 
+# Good question to work on the fundamentals
 # Learn off by heart how to sort, join, separate strings, etc!
 
 # ---------------------------- #
 
 # >>> My Solution <<<
-# Time Complexity: 
+# Time Complexity: O(n*klogk) 
+# n = number of strings, k = average length. Sorting 1 string of length k takes klogk. We do this n times!
 # Space Complexity:
 # Notes:
 class Solution(object):
@@ -27,9 +29,12 @@ class Solution(object):
 # ---------------------------- #
 
 # >>> : <<<
-# Time Complexity:
+# Time Complexity: o(m*n*26) == O(n*k)
 # Space Complexity: 
 # Notes:
+# n = number of input strings, k = average length of strings,26 = number of letters in alphabet
+
+
 
 # ---------------------------- #
 
