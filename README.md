@@ -7,4 +7,4 @@ Resources that I would recommend include:
 -   The [Coding Interview Patterns](https://blog.bytebytego.com/p/my-new-book-coding-interview-patterns) book by ByteByteGo
 -   The [NeetCode](https://neetcode.io/) website and [Youtube Channel](https://www.youtube.com/c/neetcode)
 -   [Visualgo](https://visualgo.net/en) which helps to visualise DSA.
-    For example: [Sorting Algorithms](https://visualgo.net/en/sorting)
+    -   For example: [Sorting Algorithms](https://visualgo.net/en/sorting)
